@@ -12,7 +12,7 @@ const app = express();
 // Global Middleware
 // CORS configuration: accept requests from client only
 app.use(cors({
-    origin: 'http://localhost:3001',
+    origin: ['http://localhost:3001', 'https://echelon-realty-web.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
